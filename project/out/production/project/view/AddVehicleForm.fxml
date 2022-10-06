@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddVehicleContext" prefHeight="415.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.AddVehicleFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="65.0" stroke="BLACK" strokeType="INSIDE" width="713.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.6904761904761905" startX="0.26666666666666666">
+               <stops>
+                  <Stop color="#002a51" />
+                  <Stop color="#002a51" offset="0.007662835249042145" />
+                  <Stop color="#356683" offset="0.6916301299522057" />
+                  <Stop color="#2e5f8d" offset="0.8731287277323536" />
+                  <Stop color="#2e5f8d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="271.0" layoutY="7.0" prefHeight="52.0" prefWidth="171.0" text="ADD VEHICLE" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="120.0" text="Vehicle Number">
+         <font>
+            <Font name="Cooper Black" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="252.0" text="No Of Passengers">
+         <font>
+            <Font name="Cooper Black" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="184.0" text="Maximum Weight">
+         <font>
+            <Font name="Cooper Black" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="319.0" text="Vehicle Type">
+         <font>
+            <Font name="Cooper Black" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbAddVehicleType" layoutX="288.0" layoutY="322.0" prefHeight="25.0" prefWidth="189.0" />
+      <JFXTextField fx:id="txtNoOfPassengers" layoutX="288.0" layoutY="252.0" prefHeight="25.0" prefWidth="190.0" />
+      <JFXTextField fx:id="txtVehicleNumber" layoutX="291.0" layoutY="119.0" prefHeight="25.0" prefWidth="190.0" />
+      <JFXTextField fx:id="txtMaxWeight" layoutX="290.0" layoutY="182.0" prefHeight="25.0" prefWidth="190.0" />
+      <JFXButton layoutX="524.0" layoutY="314.0" onAction="#AddVehicleOnAction" ripplerFill="#78797c" style="-fx-background-color: #44bd32;" text="Add Vehicle">
+         <font>
+            <Font name="Cooper Black" size="21.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

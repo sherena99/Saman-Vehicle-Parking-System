@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainContext" prefHeight="630.0" prefWidth="876.0" style="-fx-background-color: #535c68;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.MainFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0d0d0d" height="71.0" layoutX="-1.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="916.0" />
+      <Label layoutX="225.0" layoutY="8.0" prefHeight="52.0" prefWidth="492.0" text="Saman Vehicle Parking System" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="157.0" prefHeight="23.0" prefWidth="129.0" text="Select Vehicle" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="214.0" prefHeight="23.0" prefWidth="123.0" text="Vehicle Type" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="271.0" prefHeight="19.0" prefWidth="54.0" text="Driver" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtVehicleType" editable="false" focusColor="#fcfcfc" layoutX="207.0" layoutY="205.0" prefHeight="25.0" prefWidth="178.0" unFocusColor="WHITE" />
+      <JFXComboBox fx:id="cmbSelectVehicle" focusColor="WHITE" layoutX="209.0" layoutY="154.0" onAction="#cmbSelectVehicleOnAction" prefHeight="25.0" prefWidth="178.0" unFocusColor="WHITE" />
+      <JFXComboBox fx:id="cmbDriver" focusColor="WHITE" layoutX="207.0" layoutY="261.0" prefHeight="25.0" prefWidth="178.0" unFocusColor="WHITE" />
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#dbdbdd" height="179.0" layoutX="62.0" layoutY="370.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="361.0">
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" color="#fffcfc" />
+         </effect>
+      </Rectangle>
+      <Label layoutX="88.0" layoutY="388.0" prefHeight="29.0" prefWidth="290.0" text="Your Parking Slot Number">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#dbdbdd" height="126.0" layoutX="506.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="361.0">
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" color="#fffcfc" />
+         </effect>
+      </Rectangle>
+      <JFXButton fx:id="btnParkVehicleId" buttonType="RAISED" layoutX="564.0" layoutY="316.0" onAction="#btnparkVehicleOnAction" prefHeight="57.0" prefWidth="259.0" ripplerFill="BLACK" style="-fx-background-color: dbdbdd;" text="Park Vehicle">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="565.0" layoutY="480.0" onAction="#btnManagementLogOnAction" prefHeight="69.0" prefWidth="256.0" ripplerFill="#808080" style="-fx-background-color: #0652DD; -fx-background-radius: 25;" text="Management log In" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnOnDeliveryShiftId" buttonType="RAISED" layoutX="565.0" layoutY="394.0" onAction="#btnOnDeliveryOnAction" prefHeight="57.0" prefWidth="256.0" ripplerFill="BLACK" style="-fx-background-color: dbdbdd;" text="On Delivery Shift">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblSlotNumber" layoutX="79.0" layoutY="446.0" prefHeight="76.0" prefWidth="333.0">
+         <font>
+            <Font name="Cooper Black" size="66.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="530.0" layoutY="156.0" prefHeight="25.0" prefWidth="157.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="545.0" layoutY="193.0" prefHeight="60.0" prefWidth="311.0">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
